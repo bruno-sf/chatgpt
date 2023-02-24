@@ -1,5 +1,9 @@
 FROM python:3.9-slim
 
+ARG API_VALUE
+
+ENV OPENAI_API_KEY=$API_VALUE
+
 WORKDIR /app
 
 COPY . /app
