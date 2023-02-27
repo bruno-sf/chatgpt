@@ -27,6 +27,7 @@ or
 echo OPENAI_API_KEY="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" > .env
 docker run --env-file ./env brunoferreira/chatgpt "Write me PEP-8 python boiler plate code"
 ```
+![img](https://i.imgur.com/uplvcx8.png)
 
 Option 3 - Buildind a local Docker image with your key installed (preferred method):
 ```
@@ -35,7 +36,7 @@ docker build --build-arg API_VALUE=$OPENAI_API_KEY -t chatgpt-${USER} .
 docker run chatgpt-${USER}
 ```
 
-![img](https://i.imgur.com/uplvcx8.png)
+![img](https://i.imgur.com/3FxxWjC.png)
 
 * Just an extra stuff if you like alias:
 ```
